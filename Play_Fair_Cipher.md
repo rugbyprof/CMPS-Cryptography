@@ -31,12 +31,12 @@ c) If the letters are in different rows and columns of the square, this forms th
 
 Example: The first diagraph "MY" is encoded by 3c), the other corners of the interior square are "HQ".
 
-| **M** | A | T | _ **H** _ | E |
+| **M** | A | T | **H**| E |
 | --- | --- | --- | --- | --- |
 | I/J | C | S | R | U |
 | L | W | O | D | B |
 | F | G | K | N | P |
-| _ **Q** _ | X | V | **Y** | Z |
+| **Q** | X | V | **Y** | Z |
 
 The first eight diagraphs are encoded by the same method. Looking at the diagraph "ND", they are in the same column, hence they will be replaced with the letter directly below. Thus "N" is replaced by "Y" and "D" is replaced by "N". The diagraph "ND" becomes "YN" .
 
