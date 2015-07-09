@@ -154,29 +154,32 @@ class PlayFair:
         #Digraph is in neither row nor column, so it's a square
         location1 = self.getLocation(digraph[0])
         location2 = self.getLocation(digraph[1])
-        
+
         print(location1)
         print(location2)
-        
-        return []
+
+        print(self.Square[location1[0]][location2[1]])
+        print(self.Square[location2[0]][location1[1]])
+
+        return [self.Square[location1[0]][location2[1]],self.Square[location2[0]][location1[1]]]
 
     def getLocation(self,letter):
         row = 0
         col = 0
-        
+
         count = 0
         for list in self.Square:
             if letter in list:
                 row = count
             count += 1
-            
+
         count = 0
         for list in self.Transposed:
             if letter in list:
                 col = count
             count += 1
         return [row,col]
-    
+
     #############################################
     # Helper methods just to see whats going on
     #############################################
