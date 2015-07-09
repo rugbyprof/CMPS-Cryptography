@@ -8,6 +8,10 @@
     - It's code I've given you from class
     - You cite the location you obtained the code from.
     - Small snippets (1-2 lines need not be cited), but a block of code ( 5 or more lines) needs to be.
+- Your code needs to be thoroughly commented
+- Your code needs to be organized (use of functions and / or classes). Not just a hodgepodge of top down coding.
+
+#### What I should see:
 
 Whether or not you use the given starter code, your program should perform the following:
 
