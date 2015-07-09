@@ -39,7 +39,7 @@ a means to push keep your files in a central repository if your using one of the
 xxxx = Your course number (4443 or 5373).
 
 - `To`: terry.griffin@mwsu.edu
-- `Subject`: xxxx Swift Programming - Assignment 1 
+- `Subject`: xxxx Crypto Programming - Assignment 1 
 
 >
 Hello Professor Griffin,<br><br>
@@ -52,7 +52,7 @@ My Repository name is: your-repository-name
 Every email must have a minimum of two items included:
 
 - The course number and title in the subject:
-    - `xxxx - Swift Programming`
+    - `xxxx - Crypto Programming`
 - Your name
 
 I can't promise an answer if you don't provide those two pieces of information.
