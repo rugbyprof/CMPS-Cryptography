@@ -35,7 +35,7 @@ a means to push keep your files in a central repository if your using one of the
 
 #### Make me a contributer:
 
-
+Go to your repo settings and add `rugbyprof` and `swimprof` as collaboraters.
 
 
 #### Send me an email:
