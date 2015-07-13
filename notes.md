@@ -1,6 +1,6 @@
 ___Prop___
 
-![equation]("http://latex.codecogs.com/gif.latex?\LARGE&space;\pi(n)")
+[equation]("http://latex.codecogs.com/gif.latex?\LARGE&space;\pi(n)")
 
 1. For every `a != 0`, `a|0` and `a|a`, also `1|b` for every `b`
 2. if `a|b` and `b|c` , then `a|c`
