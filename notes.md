@@ -1,11 +1,11 @@
 ___Prop___
 
-1. For every ___a___ ![](https://raw.githubusercontent.com/rugbyprof/CMPS-Cryptography/master/symbols/neq.gif) ___0___, 
-    - ___a___ | ___0___, 
-    - ___a___ | ___a___, 
-    - also ___1___ | ___b___ for every ___b___
-2. if ___a___ | ___b___ and ___b___ | ___c___ , then ___a___ | ___c___
-3. If ___a___ | ___b___ and ___a___ | ___c___, then ___a___ | ___sb + tc___ for any ___s,t that ![](https://raw.githubusercontent.com/rugbyprof/CMPS-Cryptography/master/symbols/in.gif)___ ![](https://raw.githubusercontent.com/rugbyprof/CMPS-Cryptography/master/symbols/integers.gif)
+1. For every _a_ ![](https://raw.githubusercontent.com/rugbyprof/CMPS-Cryptography/master/symbols/neq.gif) ___0___, 
+    - _a_ | _0_, 
+    - _a_ | _a_, 
+    - also _1_ | _b_ for every _b_
+2. if _a_ | _b_ and _b_ | _c_ , then _a_ | _c_
+3. If _a_ | _b_ and _a_ | _c_, then _a_ | _sb + tc_ for any _s,t_ that ![](https://raw.githubusercontent.com/rugbyprof/CMPS-Cryptography/master/symbols/in.gif) ![](https://raw.githubusercontent.com/rugbyprof/CMPS-Cryptography/master/symbols/integers.gif)
 
 - A number `p > 1` that is divisible only by 1 and itself is called prime.
 - An integer that is not prime is called composite, that `n=ab`, where `1 < a,b < n`
