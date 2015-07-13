@@ -1,9 +1,9 @@
 ___Prop___
 
-1. For every a ![](https://raw.githubusercontent.com/rugbyprof/CMPS-Cryptography/master/symbols/neq.gif) 0, 
+1. For every ___a___ ![](https://raw.githubusercontent.com/rugbyprof/CMPS-Cryptography/master/symbols/neq.gif) ___0___, 
     - ___a___ | ___0___, 
     - ___a___ | ___a___, 
-    - also ___1 | b___ for every ___b___
+    - also ___1___ | ___b___ for every ___b___
 2. if `a|b` and `b|c` , then `a|c`
 3. If `a|b` and `a|c`, then `a|sb + tc` for any `s,t exists in Ints`
 
