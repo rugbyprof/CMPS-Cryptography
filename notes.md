@@ -1,6 +1,6 @@
 ___Prop___
 
-1. For every `a != 0`, `a|0` and `a|a`, also `1|b` for every `b`
+1. For every `a` ![](https://raw.githubusercontent.com/rugbyprof/CMPS-Cryptography/master/symbols/infinity.gif) `0`, `a|0` and `a|a`, also `1|b` for every `b`
 2. if `a|b` and `b|c` , then `a|c`
 3. If `a|b` and `a|c`, then `a|sb + tc` for any `s,t exists in Ints`
 
