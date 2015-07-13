@@ -4,8 +4,8 @@ ___Prop___
     - ___a___ | ___0___, 
     - ___a___ | ___a___, 
     - also ___1___ | ___b___ for every ___b___
-2. if `a|b` and `b|c` , then `a|c`
-3. If `a|b` and `a|c`, then `a|sb + tc` for any `s,t exists in Ints`
+2. if ___a|b___ and ___b|c___ , then ___a|c___
+3. If ___a|b___ and ___a|c___, then ___a___ | ___sb + tc___ for any ___s,t exists in___ ![](https://raw.githubusercontent.com/rugbyprof/CMPS-Cryptography/master/symbols/integers.gif)
 
 - A number `p > 1` that is divisible only by 1 and itself is called prime.
 - An integer that is not prime is called composite, that `n=ab`, where `1 < a,b < n`
