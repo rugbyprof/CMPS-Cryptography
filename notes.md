@@ -1,4 +1,5 @@
-__Prop__
+__Prop__ 
+
 1. For every `a != 0`, `a|0` and `a|a`, also `1|b` for every `b`
 2. if `a|b` and `b|c` , then `a|c`
 3. If `a|b` and `a|c`, then `a|sb + tc` for any `s,t exists in Ints`
