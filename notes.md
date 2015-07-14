@@ -16,6 +16,7 @@ ___Prop___
 ___Thm___
 
 -----
+
 There are infinitely many prime numbers.
 -----
 
