@@ -55,10 +55,7 @@ ___Definition___
 The greatest common divisor of _a & b_ is the largest positive integer dividing both _a & b_.<br>
 We denote that as _gcd(a,b) = x_
 
------
-
-
------
+<br>
 
 We say that _a & b_ are relatively prime, if there exists a _gcd(a,b) = 1_
 
@@ -74,19 +71,19 @@ Given _a & b_ in integers, there exists a unique _q,r_ such that _a = ba + r_ wh
 
 ___Euclidian Algorithm___
 
-1728 = 12(135) + 108
-135 = 108(1) + `27`(gcd)
-108 = 27(4) + 0
+1728 = 12(135) + 108<br>
+135 = 108(1) + `27`(gcd)<br>
+108 = 27(4) + 0<br>
+<br>
+gcd(482,1180)<br>
+<br>
+1180 = 2(482) + 216<br>
+482 = 2(216) + 50<br>
+216 = 4(50) + 16<br>
+50 = 3(16) + `2`<br>
+16 = 8(2) + 0<br>
 
-gcd(482,1180)
-
-1180 = 2(482) + 216
-482 = 2(216) + 50
-216 = 4(50) + 16
-50 = 3(16) + `2`
-16 = 8(2) + 0
-
-`gcd(a,b) = gcd(b,r)`
+`gcd(a,b) = gcd(b,r)`<br>
 
 ___Def___
 
@@ -94,22 +91,22 @@ ___Def___
 
 Let _a,b,n_ be integers and _n_ ![](https://raw.githubusercontent.com/rugbyprof/CMPS-Cryptography/master/symbols/equiv.gif) _0_
 we say that _a_ is congruent to _b % n_ , _a ![](https://raw.githubusercontent.com/rugbyprof/CMPS-Cryptography/master/symbols/equiv.gif) b (mod n)_ , if _n | a-b_
+<br>
+32 congruent 7 (mod 5)<br>
+<br>
+32 - 7 = 25 => 25 / 5 == 0<br>
 
-32 congruent 7 (mod 5)
+-12 congruent 37 (mod 7)<br>
 
-32 - 7 = 25 => 25 / 5 == 0
-
--12 congruent 37 (mod 7)
-
--12 - 37 = -49 => -49 % 7 == 0
+-12 - 37 = -49 => -49 % 7 == 0<br>
 
 ___Prop___
 
-Let a,b,c,n be integers and n != 0
-1. a congruent 0 (mod n) iff n | a
-2. a congruent a (mod n)
-3. a congruent b (mod n) iff b congruent a (mod n)
-4. a congruent b (mod n) and b congruent c (mod n), then a congruent c (mod n)
+Let _a,b,c,n_ be integers and _n ![](https://raw.githubusercontent.com/rugbyprof/CMPS-Cryptography/master/symbols/neq.gif) 0_
+1. _a ![](https://raw.githubusercontent.com/rugbyprof/CMPS-Cryptography/master/symbols/equiv.gif) 0 (mod n) iff n_ | _a_
+2. _a ![](https://raw.githubusercontent.com/rugbyprof/CMPS-Cryptography/master/symbols/equiv.gif) a (mod n)_
+3. _a ![](https://raw.githubusercontent.com/rugbyprof/CMPS-Cryptography/master/symbols/equiv.gif) b (mod n) iff b ![](https://raw.githubusercontent.com/rugbyprof/CMPS-Cryptography/master/symbols/equiv.gif) a (mod n)_
+4. _a ![](https://raw.githubusercontent.com/rugbyprof/CMPS-Cryptography/master/symbols/equiv.gif) b (mod n) and b ![](https://raw.githubusercontent.com/rugbyprof/CMPS-Cryptography/master/symbols/equiv.gif) c (mod n), then a ![](https://raw.githubusercontent.com/rugbyprof/CMPS-Cryptography/master/symbols/equiv.gif) c (mod n)_
 
 ___Thm___
 
