@@ -57,13 +57,13 @@ ___Def___
 >Let _a,b,n_ be integers and _n_ ![](https://raw.githubusercontent.com/rugbyprof/CMPS-Cryptography/master/symbols/equiv.gif) _0_
 we say that _a_ is congruent to _b % n_ , _a ![](https://raw.githubusercontent.com/rugbyprof/CMPS-Cryptography/master/symbols/equiv.gif) b (mod n)_ , if _n | a-b_
 <br>
-32 congruent 7 (mod 5)<br>
+32 ![](https://raw.githubusercontent.com/rugbyprof/CMPS-Cryptography/master/symbols/equiv.gif) 7 (mod 5)<br>
 <br>
 32 - 7 = 25 => 25 / 5 == 0<br>
 <br>
--12 congruent 37 (mod 7)<br>
+-12 ![](https://raw.githubusercontent.com/rugbyprof/CMPS-Cryptography/master/symbols/equiv.gif) 37 (mod 7)<br>
 <br>
--12 - 37 = -49 => -49 % 7 == 0<br>
+-12 - 37 = -49 => -49 % 7 = 0<br>
 
 ___Prop___
 >Let _a,b,c,n_ be integers and _n ![](https://raw.githubusercontent.com/rugbyprof/CMPS-Cryptography/master/symbols/neq.gif) 0_<br>
