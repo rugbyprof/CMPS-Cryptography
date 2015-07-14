@@ -17,7 +17,7 @@ for i in range(26*26):
 # param ki: key index
 # param mi: message index
 def encrypt(v,k,m,ki,mi):
-    row = ord(m[mi]) - 65 
+    row = ord(m[mi]) - 65
     col = ord(k[ki]) - 65
     print(row,col)
     return v[row][col]
@@ -29,8 +29,7 @@ def encrypt(v,k,m,ki,mi):
 # param ki: key index
 # param mi: message index
 def decrypt(v,k,em,ki,emi):
-
-
+    pass
 
 # printMatrix
 #
@@ -40,7 +39,7 @@ def printMatrix(v):
     j=0
     k=0
     line = ""
-    
+
     for i in range(26*26):
         line = line + v[j][k]
         j = j + 1
@@ -69,12 +68,9 @@ for i in range(len(message)):
     ki = i % len(key)
     print(message[i])
     if ord(message[i]) == 32:
-        cipherText = cipherText + ' '   
+        cipherText = cipherText + ' '
     else:
         cipherText = cipherText + encrypt(vigenere,key,message,ki,mi)
 
 
 print(cipherText)
-
-
-

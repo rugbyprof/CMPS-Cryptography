@@ -19,6 +19,9 @@ def infer_spaces(s):
     # Returns a pair (match_cost, match_length).
     def best_match(i):
         candidates = enumerate(reversed(cost[max(0, i-maxword):i]))
+        for k,c in candidates:
+            print(k,c)
+        candidates = enumerate(reversed(cost[max(0, i-maxword):i]))
         return min((c + wordcost.get(s[i-k-1:i], 9e999), k+1) for k,c in candidates)
 
     # Build the cost array.
