@@ -1,3 +1,6 @@
+### A touch of Number Theory
+(not proof read)
+
 ___Prop___
 
 >1. For every _a_ ![](https://raw.githubusercontent.com/rugbyprof/CMPS-Cryptography/master/symbols/neq.gif) _0_, 
