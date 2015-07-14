@@ -67,8 +67,8 @@ if __name__ == '__main__':
 
     #start = time.time()
 
-    #s = 'thethumbgreenappleactiveassignmentweeklymetaphor'
-    #print(infer_spaces(s))
+    s = 'thethumbgreenappleactiveassignmentweeklymetaphor'
+    print(infer_spaces(s))
 
     #end = time.time()
 
@@ -78,9 +78,9 @@ if __name__ == '__main__':
 
     start = time.time()
 
-    load_frequency_dictionary(frequency_dictionary)
+    #load_frequency_dictionary(frequency_dictionary)
 
-    sorted_frequency_dictionary = sorted(frequency_dictionary.items(), key=operator.itemgetter(1), reverse=True)
+    #sorted_frequency_dictionary = sorted(frequency_dictionary.items(), key=operator.itemgetter(1), reverse=True)
 
     #print(sorted_frequency_dictionary)
     end = time.time()
@@ -88,3 +88,5 @@ if __name__ == '__main__':
     print(end-start)
 
     print(len(frequency_dictionary))
+
+print('The story of {0}, {1}, and {other}.'.format('Bill', 'Manfred',other='Georg'))
