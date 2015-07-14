@@ -66,9 +66,11 @@ We say that _a & b_ are relatively prime, if there exists a _gcd(a,b) = 1_
 
 ___Division Algorithm___
 
-```
-Given a & b in integers, there exists a unique q,r such that a = ba + r where 0 <= r < b
-```
+-----
+
+Given _a & b_ in integers, there exists a unique _q,r_ such that _a = ba + r_ where _0_ ![](https://raw.githubusercontent.com/rugbyprof/CMPS-Cryptography/master/symbols/leq.gif) _r < b_
+
+-----
 
 ___Euclidian Algorithm___
 
@@ -90,7 +92,7 @@ ___Def___
 
 -----
 
-Let _a,b,n_ integers and _n_ ![](https://raw.githubusercontent.com/rugbyprof/CMPS-Cryptography/master/symbols/equiv.gif) _0_
+Let _a,b,n_ be integers and _n_ ![](https://raw.githubusercontent.com/rugbyprof/CMPS-Cryptography/master/symbols/equiv.gif) _0_
 we say that _a_ is congruent to _b % n_ , _a ![](https://raw.githubusercontent.com/rugbyprof/CMPS-Cryptography/master/symbols/equiv.gif) b (mod n)_ , if _n | a-b_
 
 32 congruent 7 (mod 5)
