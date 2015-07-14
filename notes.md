@@ -1,4 +1,5 @@
 ___Prop___
+
 -----
 1. For every _a_ ![](https://raw.githubusercontent.com/rugbyprof/CMPS-Cryptography/master/symbols/neq.gif) _0_, 
     - _a_ | _0_, 
