@@ -7,13 +7,15 @@ ___Prop___
 2. if _a_ | _b_ and _b_ | _c_ , then _a_ | _c_
 3. If _a_ | _b_ and _a_ | _c_, then _a_ | _sb + tc_ for any _s,t_ that ![](https://raw.githubusercontent.com/rugbyprof/CMPS-Cryptography/master/symbols/in.gif) ![](https://raw.githubusercontent.com/rugbyprof/CMPS-Cryptography/master/symbols/integers.gif)
 
+----
+
 - A number _p > 1_ that is divisible only by _1_ and itself is called prime.
 - An integer that is not prime is called composite, that _n = ab_, where _1 < a,b < n_
 
 ___Thm___
-```
+
 There are infinitely many prime numbers.
-```
+-----
 
 ___Thm___
 
