@@ -86,3 +86,7 @@ and _gcd(a,n) = 1_
 <br>
 If _ab ![](https://raw.githubusercontent.com/rugbyprof/CMPS-Cryptography/master/symbols/equiv.gif) ac (mod n)_, then _b ![](https://raw.githubusercontent.com/rugbyprof/CMPS-Cryptography/master/symbols/equiv.gif) c (mod n)_
 
+___THM___
+>Let _a_ , _b_ be integers, then there exists integers _x,y_ such that _ax + by = gcd(a,b_
+<br>
+`3x+2Y = 7`
