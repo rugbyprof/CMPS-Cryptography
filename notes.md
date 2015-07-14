@@ -42,7 +42,7 @@ For every positive integer is a product of primes. The factorization is unique u
 ___Thm___
 
 -----
-If p is prime and `p | ab` then `p|a` or `p|b`
+If _p_ is prime and _p | ab_ then _p|a_ or _p|b_
 
 
 -----
@@ -51,15 +51,15 @@ ___Definition___
 
 
 -----
-The greatest common divisor of a & b is the largest positive integer dividing both a & b.
-We denote that as gcd(a,b) = ??
+The greatest common divisor of _a & b_ is the largest positive integer dividing both _a & b_.<br>
+We denote that as _gcd(a,b) = x_
 
 -----
 
 
 -----
 
-We say that a & b are relatively prime, if there gcd(a,b) == 1
+We say that _a & b_ are relatively prime, if there exists a _gcd(a,b) = 1_
 
 -----
 
@@ -87,8 +87,10 @@ gcd(482,1180)
 
 ___Def___
 
+-----
+
 Let a,b,n integers and n != 0
-we say that a is congruent to b % n , a (triple equal) b (mod n)
+we say that a is congruent to b % n , a ![](https://raw.githubusercontent.com/rugbyprof/CMPS-Cryptography/master/symbols/equiv.gif) b (mod n)
 
 if n|a-b 
 
