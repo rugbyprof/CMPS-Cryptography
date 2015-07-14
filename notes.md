@@ -19,7 +19,7 @@ ___Thm___
 
 Let ![](https://raw.githubusercontent.com/rugbyprof/CMPS-Cryptography/master/symbols/pi.gif)_(n)_ be the number of primes less than _n_. <br>
 
-Then ![](https://raw.githubusercontent.com/rugbyprof/CMPS-Cryptography/master/symbols/in.gif)_(x) ![](https://raw.githubusercontent.com/rugbyprof/CMPS-Cryptography/master/symbols/approx.gif) x / log(x)_ <br>
+Then ![](https://raw.githubusercontent.com/rugbyprof/CMPS-Cryptography/master/symbols/pi.gif)_(x) ![](https://raw.githubusercontent.com/rugbyprof/CMPS-Cryptography/master/symbols/approx.gif) x / log(x)_ <br>
 
 ratio ![](https://raw.githubusercontent.com/rugbyprof/CMPS-Cryptography/master/symbols/pi.gif)_(x) / (x / ln(x))_ -> _1_ as _x -> infinity_
 
