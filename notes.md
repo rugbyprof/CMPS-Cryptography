@@ -70,18 +70,16 @@ ___Prop___
 4. _a ![](https://raw.githubusercontent.com/rugbyprof/CMPS-Cryptography/master/symbols/equiv.gif) b (mod n) and b ![](https://raw.githubusercontent.com/rugbyprof/CMPS-Cryptography/master/symbols/equiv.gif) c (mod n), then a ![](https://raw.githubusercontent.com/rugbyprof/CMPS-Cryptography/master/symbols/equiv.gif) c (mod n)_<br>
 
 ___Thm___
-
-Let a,b,c,c,n be integers and n != 0
-and suppose a congruent b (mod n) and c congruent d (mod n)
-then:
-a + c congruent b + d (mod n)
-a - c congruent b - d (mod n)
-a * c congruent b * d (mod n)
+>Let _a,b,c,c,n_ be integers and _n ![](https://raw.githubusercontent.com/rugbyprof/CMPS-Cryptography/master/symbols/neq.gif) 0_
+and suppose _a ![](https://raw.githubusercontent.com/rugbyprof/CMPS-Cryptography/master/symbols/equiv.gif) b (mod n)_ and _c ![](https://raw.githubusercontent.com/rugbyprof/CMPS-Cryptography/master/symbols/equiv.gif) d (mod n)_
+then:<br>
+_a + c ![](https://raw.githubusercontent.com/rugbyprof/CMPS-Cryptography/master/symbols/equiv.gif) b + d (mod n)_<br>
+_a - c ![](https://raw.githubusercontent.com/rugbyprof/CMPS-Cryptography/master/symbols/equiv.gif) b - d (mod n)_<br>
+_a * c ![](https://raw.githubusercontent.com/rugbyprof/CMPS-Cryptography/master/symbols/equiv.gif) b * d (mod n)_<br>
 
 ___Prop___
-
-Let a,b,c,n be integers and n != 0
-and gcd(a,n) = 1
-
-If ab congruent ac (mod n), then b congruent c (mod n)
+>Let _a,b,c,n_ be integers and _n ![](https://raw.githubusercontent.com/rugbyprof/CMPS-Cryptography/master/symbols/neq.gif) 0_
+and _gcd(a,n) = 1_
+<br>
+If _ab ![](https://raw.githubusercontent.com/rugbyprof/CMPS-Cryptography/master/symbols/equiv.gif) ac (mod n)_, then _b ![](https://raw.githubusercontent.com/rugbyprof/CMPS-Cryptography/master/symbols/equiv.gif) c (mod n)_
 
