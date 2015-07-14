@@ -29,6 +29,7 @@ Let ![](https://raw.githubusercontent.com/rugbyprof/CMPS-Cryptography/master/sym
 Then ![](https://raw.githubusercontent.com/rugbyprof/CMPS-Cryptography/master/symbols/pi.gif)_(x) ![](https://raw.githubusercontent.com/rugbyprof/CMPS-Cryptography/master/symbols/approx.gif) x / log(x)_ <br>
 
 ratio ![](https://raw.githubusercontent.com/rugbyprof/CMPS-Cryptography/master/symbols/pi.gif)_(x) / (x / ln(x))_ -> _1_ as _x -> infinity_
+
 -----
 
 ___Thm___
@@ -39,21 +40,28 @@ For every positive integer is a product of primes. The factorization is unique u
 -----
 
 ___Thm___
-```
+
+-----
 If p is prime and `p | ab` then `p|a` or `p|b`
 
-```
+
+-----
 
 ___Definition___ 
 
-```
+
+-----
 The greatest common divisor of a & b is the largest positive integer dividing both a & b.
 We denote that as gcd(a,b) = ??
-```
 
-```
+-----
+
+
+-----
+
 We say that a & b are relatively prime, if there gcd(a,b) == 1
-```
+
+-----
 
 ___Division Algorithm___
 
