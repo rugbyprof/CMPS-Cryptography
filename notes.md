@@ -100,9 +100,11 @@ we say that _a_ is congruent to _b % n_ , _a ![](https://raw.githubusercontent.c
 
 -12 - 37 = -49 => -49 % 7 == 0<br>
 
+-----
+
 ___Prop___
 
-Let _a,b,c,n_ be integers and _n ![](https://raw.githubusercontent.com/rugbyprof/CMPS-Cryptography/master/symbols/neq.gif) 0_<br>
+>Let _a,b,c,n_ be integers and _n ![](https://raw.githubusercontent.com/rugbyprof/CMPS-Cryptography/master/symbols/neq.gif) 0_<br>
 1. _a ![](https://raw.githubusercontent.com/rugbyprof/CMPS-Cryptography/master/symbols/equiv.gif) 0 (mod n) iff n_ | _a_<br>
 2. _a ![](https://raw.githubusercontent.com/rugbyprof/CMPS-Cryptography/master/symbols/equiv.gif) a (mod n)_<br>
 3. _a ![](https://raw.githubusercontent.com/rugbyprof/CMPS-Cryptography/master/symbols/equiv.gif) b (mod n) iff b ![](https://raw.githubusercontent.com/rugbyprof/CMPS-Cryptography/master/symbols/equiv.gif) a (mod n)_<br>
