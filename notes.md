@@ -41,6 +41,7 @@ For every positive integer is a product of primes. The factorization is unique u
 
 ___Thm___
 
+
 -----
 If _p_ is prime and _p | ab_ then _p|a_ or _p|b_
 
@@ -89,10 +90,8 @@ ___Def___
 
 -----
 
-Let a,b,n integers and n != 0
-we say that a is congruent to b % n , a ![](https://raw.githubusercontent.com/rugbyprof/CMPS-Cryptography/master/symbols/equiv.gif) b (mod n)
-
-if n|a-b 
+Let _a,b,n_ integers and _n_ ![](https://raw.githubusercontent.com/rugbyprof/CMPS-Cryptography/master/symbols/equiv.gif) _0_
+we say that _a_ is congruent to _b % n_ , _a ![](https://raw.githubusercontent.com/rugbyprof/CMPS-Cryptography/master/symbols/equiv.gif) b (mod n)_ , if _n | a-b_
 
 32 congruent 7 (mod 5)
 
