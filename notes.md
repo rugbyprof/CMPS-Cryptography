@@ -7,8 +7,8 @@ ___Prop___
 2. if _a_ | _b_ and _b_ | _c_ , then _a_ | _c_
 3. If _a_ | _b_ and _a_ | _c_, then _a_ | _sb + tc_ for any _s,t_ that ![](https://raw.githubusercontent.com/rugbyprof/CMPS-Cryptography/master/symbols/in.gif) ![](https://raw.githubusercontent.com/rugbyprof/CMPS-Cryptography/master/symbols/integers.gif)
 
-- A number `p > 1` that is divisible only by 1 and itself is called prime.
-- An integer that is not prime is called composite, that `n=ab`, where `1 < a,b < n`
+- A number _p > 1_ that is divisible only by _1_ and itself is called prime.
+- An integer that is not prime is called composite, that _n = ab_, where _1 < a,b < n_
 
 ___Thm___
 ```
@@ -16,12 +16,13 @@ There are infinitely many prime numbers.
 ```
 
 ___Thm___
-```
-Let Pi(n) be the number of primes less than n. Then Pi(x) = x / log(x) (approx)
 
-ratio Pi(x) / (x / ln(x)) -> 1 as x -> infinity
+Let ![](https://raw.githubusercontent.com/rugbyprof/CMPS-Cryptography/master/symbols/pi.gif)_(n)_ be the number of primes less than _n_. <br>
 
-```
+Then ![](https://raw.githubusercontent.com/rugbyprof/CMPS-Cryptography/master/symbols/in.gif)_(x) ![](https://raw.githubusercontent.com/rugbyprof/CMPS-Cryptography/master/symbols/approx.gif) x / log(x)_ <br>
+
+ratio ![](https://raw.githubusercontent.com/rugbyprof/CMPS-Cryptography/master/symbols/pi.gif)_(x) / (x / ln(x))_ -> _1_ as _x -> infinity_
+
 
 ___Thm___
 ```
