@@ -59,6 +59,7 @@ for n in range(1, N):
         coprimes -= factored[f]
     print(n,' is coprime with ',len(coprimes),' others')
 ```
+Source: [StackOverflow](http://stackoverflow.com/questions/23922371/optimizing-list-comprehension-to-find-pairs-of-co-prime-numbers)
 
 Example:
 
