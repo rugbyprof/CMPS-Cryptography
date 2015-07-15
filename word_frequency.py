@@ -4,24 +4,26 @@ import os
 import sys
 import re
 import operator
+import pprint
 
 # Build a cost dictionary, assuming Zipf's law and cost = -math.log(probability).
 words = open("words-by-frequency1.txt").read().split()
 wordcost = dict((k, log((i+1)*log(len(words)))) for i,k in enumerate(words))
 maxword = max(len(x) for x in words)
 
+print(wordcost)
+
 def infer_spaces(s):
     """Uses dynamic programming to infer the location of spaces in a string
     without spaces."""
-
+    pp = pprint.PrettyPrinter(depth=6)
     # Find the best match for the i first characters, assuming cost has
     # been built for the i-1 first characters.
     # Returns a pair (match_cost, match_length).
     def best_match(i):
         candidates = enumerate(reversed(cost[max(0, i-maxword):i]))
-        for k,c in candidates:
-            print(k,c)
-        candidates = enumerate(reversed(cost[max(0, i-maxword):i]))
+
+        print(len(candidates))
         return min((c + wordcost.get(s[i-k-1:i], 9e999), k+1) for k,c in candidates)
 
     # Build the cost array.
