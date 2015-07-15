@@ -12,5 +12,12 @@ def modinv(a, m):
     else:
         return x % m
 
-    
-print(modinv(3,11))
+def phi(n):
+    amount = 0
+
+    for k in range(1, n + 1):
+        if fractions.gcd(n, k) == 1:
+            #print(k)
+            amount += 1
+
+    return amount
