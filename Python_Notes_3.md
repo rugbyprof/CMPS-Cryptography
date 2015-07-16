@@ -38,46 +38,32 @@ def gcd(a, b):
 
 Relatively prime numbers are used for the multiplicative and affine ciphers. We say that two numbers are relatively prime if their greatest common divisor is 1. That is, the numbers a and b are relatively prime to each other if the gcd(a, b) == 1.
 
-The following snippet will print out `n` integers `1 <= n <= 99` along with how many other integers that are also `1 <= n <= 99` that it is coprime (relatively prime) with.
+The following snippet calculates phi(n), or the number of integers that are coprime (relatively prime) to n. This version will alternatively return the actual values that are coprime to n if wanted. Lets all agree that this would be insane for extremely large n :) 
 
 ```python
-import collections
-N = 100
+import fractions
 
-factors = [set() for n in range(N)]
-factored = collections.defaultdict(set)
+def phi(n,return_list=False):
+    amount = 0
+    coprimes = []
 
-for n in range(2, N):
-    if not factors[n]:           # no factors yet -> n is prime
-        for m in range(n, N, n): # all multiples of n up to N
-            factors[m].add(n)
-            factored[n].add(m)
+    for k in range(1, n + 1):
+        if fractions.gcd(n, k) == 1:
+            amount += 1
+            coprimes.append(k)
 
-for n in range(1, N):
-    coprimes = set(range(1, N))  # start with all the numbers in the range
-    for f in factors[n]:         # eliminate numbers that share a prime factor
-        coprimes -= factored[f]
-    print(n,' is coprime with ',len(coprimes),' others')
-```
-Source: [StackOverflow](http://stackoverflow.com/questions/23922371/optimizing-list-comprehension-to-find-pairs-of-co-prime-numbers)
+    if return_list:
+        return coprimes
+    else:
+        return amount
+        
+print(phi(30,True))
 
-Example:
+#Output: [1, 7, 11, 13, 17, 19, 23, 29]
 
-```
-1  is coprime with  99  others
-2  is coprime with  50  others
-3  is coprime with  66  others
-4  is coprime with  50  others
-5  is coprime with  80  others
-6  is coprime with  33  others
-7  is coprime with  85  others
-8  is coprime with  50  others
-9  is coprime with  66  others
-10  is coprime with  40  others
-11  is coprime with  90  others
-12  is coprime with  33  others
-13  is coprime with  92  others
-...
+print(phi(30))
+
+#Output: 8
 ```
 
-Source: [Hacking Ciphers](https://inventwithpython.com/hackingciphers.pdf) Written by: [Al Sweigart](https://inventwithpython.com/about.html)
+Some of this material is based on: [Hacking Ciphers](https://inventwithpython.com/hackingciphers.pdf) Written by: [Al Sweigart](https://inventwithpython.com/about.html) 
