@@ -75,7 +75,7 @@ The caeser cipher uses addition with modulus as a function to map one letter to 
 |-----------------------|------------------------------|------------------------------|
 |![alt text][addition_4]|![alt text][multiplication_7] |![alt text][multiplication_6] |
 
-|Plaintext Symbol|Number|Encryption with Key 15|Ciphertext|
+|Plaintext|Number|Key 15|Ciphertext|
 |:---:|:---:|:---:|:---:|
 |A|0|(0 * 15) % 26 = 0|A|
 |B|1|(1 * 15) % 26 = 15|P|
