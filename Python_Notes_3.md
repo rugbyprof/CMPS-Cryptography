@@ -101,7 +101,7 @@ The caeser cipher uses addition as a function to map one letter to another.
 
  We can do the same with multiplication.
  
- |Plaintext Symbol|Number|Encryption with Key 7|Ciphertext|
+|Plaintext Symbol|Number|Encryption with Key 7|Ciphertext|
 |:---:|:---:|:---:|:---:|
 |A|0|(0 * 7) % 26 = 0|A|
 |B|1|(1 * 7) % 26 = 7|H|
