@@ -147,6 +147,7 @@ BUT! _26_ and _7_ are relatively prime. Look what happens when they are not rela
 |K|10|(10 * 6) % 26 = 8|I|
 |L|11|(11 * 6) % 26 = 14|O|
 |M|12|(12 * 6) % 26 = 20|U|
+| | |Starts repeating | |
 |N|13|(13 * 6) % 26 = 0|A|
 |O|14|(14 * 6) % 26 = 6|G|
 |P|15|(15 * 6) % 26 = 12|M|
