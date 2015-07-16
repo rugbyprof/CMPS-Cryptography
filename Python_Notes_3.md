@@ -130,4 +130,35 @@ The caeser cipher uses addition as a function to map one letter to another.
 |Y|24|(24 * 7) % 26 = 12|M|
 |Z|25|(25 * 7) % 26 = 19|T|
 
+BUT! _26_ and _7_ are relatively prime. Look what happens when they are not relatively prime:
+
+|Plaintext Symbol|Number|Encryption with Key 6|Ciphertext|
+|:---:|:---:|:---:|:---:|
+|A|0|(0 * 6) % 26 = 0|A|
+|B|1|(1 * 6) % 26 = 6|G|
+|C|2|(2 * 6) % 26 = 12|M|
+|D|3|(3 * 6) % 26 = 18|S|
+|E|4|(4 * 6) % 26 = 24|Y|
+|F|5|(5 * 6) % 26 = 4|E|
+|G|6|(6 * 6) % 26 = 10|K|
+|H|7|(7 * 6) % 26 = 16|Q|
+|I|8|(8 * 6) % 26 = 22|W|
+|J|9|(9 * 6) % 26 = 2|C|
+|K|10|(10 * 6) % 26 = 8|I|
+|L|11|(11 * 6) % 26 = 14|O|
+|M|12|(12 * 6) % 26 = 20|U|
+|N|13|(13 * 6) % 26 = 0|A|
+|O|14|(14 * 6) % 26 = 6|G|
+|P|15|(15 * 6) % 26 = 12|M|
+|Q|16|(16 * 6) % 26 = 18|S|
+|R|17|(17 * 6) % 26 = 24|Y|
+|S|18|(18 * 6) % 26 = 4|E|
+|T|19|(19 * 6) % 26 = 10|K|
+|U|20|(20 * 6) % 26 = 16|Q|
+|V|21|(21 * 6) % 26 = 22|W|
+|W|22|(22 * 6) % 26 = 2|C|
+|X|23|(23 * 6) % 26 = 8|I|
+|Y|24|(24 * 6) % 26 = 14|O|
+|Z|25|(25 * 6) % 26 = 20|U|
+
 Some of this material is based on: [Hacking Ciphers](https://inventwithpython.com/hackingciphers.pdf) Written by: [Al Sweigart](https://inventwithpython.com/about.html) 
