@@ -68,13 +68,39 @@ print(phi(30))
 
 #### Multiplicative Cipher
 
-The caeser cipher uses addition as a function to map one letter to another. We can do the same with multiplication. 
+The caeser cipher uses addition as a function to map one letter to another. 
 
-|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
-|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-|0|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25|
-|A|B|C|D|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z|
-|0+4|1+4|2+4|3+4|4+4|5+4|6+4|7+4|8+4|9+4|10+4|11+4|12+4|13+4|14+4|15+4|16+4|17+4|18+4|19+4|20+4|21+4|22+4|23+4|24+4|25+4|
-|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z|A|B|C|D|
+|Plaintext Symbol|Number|Encryption with Key 7|Ciphertext|
+|:---:|:---:|:---:|:---:|
+|Plaintext Symbol|Number|Encryption with Key 7|Ciphertext|
+|A|0|0|0|
+|B|1|1|1|
+|C|2|2|2|
+|D|3|3|3|
+|E|4|4|4|
+|F|5|5|5|
+|G|6|6|6|
+|H|7|7|7|
+|I|8|8|8|
+|J|9|9|9|
+|K|10|10|10|
+|L|11|11|11|
+|M|12|12|12|
+|N|13|13|13|
+|O|14|14|14|
+|P|15|15|15|
+|Q|16|16|16|
+|R|17|17|17|
+|S|18|18|18|
+|T|19|19|19|
+|U|20|20|20|
+|V|21|21|21|
+|W|22|22|22|
+|X|23|23|23|
+|Y|24|24|24|
+
+ We can do the same with multiplication.
+ 
+ 
 
 Some of this material is based on: [Hacking Ciphers](https://inventwithpython.com/hackingciphers.pdf) Written by: [Al Sweigart](https://inventwithpython.com/about.html) 
