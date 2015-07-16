@@ -70,7 +70,7 @@ print(phi(30))
 
 The caeser cipher uses addition as a function to map one letter to another. 
 
-|Plaintext Symbol|Number|Shift 4|Ciphertext|
+|Plaintext|Number|Shift 4|Ciphertext|
 |:---:|:---:|:---:|:---:|
 |A|0|0 + 4 % 26 = 4|E|
 |B|1|1 + 4 % 26 = 5|F|
@@ -101,7 +101,7 @@ The caeser cipher uses addition as a function to map one letter to another.
 
  We can do the same with multiplication.
  
-|Plaintext Symbol|Number|Encryption with Key 7|Ciphertext|
+|Plaintext|Number|Key 7|Ciphertext|
 |:---:|:---:|:---:|:---:|
 |A|0|(0 * 7) % 26 = 0|A|
 |B|1|(1 * 7) % 26 = 7|H|
@@ -132,7 +132,7 @@ The caeser cipher uses addition as a function to map one letter to another.
 
 BUT! _26_ and _7_ are relatively prime. Look what happens when they are not relatively prime:
 
-|Plaintext Symbol|Number|Encryption with Key 6|Ciphertext|
+|Plaintext|Number|Key 6|Ciphertext|
 |:---:|:---:|:---:|:---:|
 |A|0|(0 * 6) % 26 = 0|A|
 |B|1|(1 * 6) % 26 = 6|G|
