@@ -68,7 +68,7 @@ print(phi(30))
 
 #### Multiplicative Cipher
 
-The caeser cipher uses addition with modulus as a function to map one letter to another. The same can be done using multiplication with modulus. However, a side effect of using multiplication is the possibility that we don't get a one-to-one function! To ensure we get a one-to-one function we must ensure that the number we multiply with is relatively prime to the number of characters were mapping (e.g. 26 % 7). 
+The caeser cipher uses addition with modulus as a function to map one letter to another. The same can be done using multiplication with modulus. However, a side effect of using multiplication is the possibility that we don't get a one-to-one function! To ensure we get a one-to-one function we must ensure that the number we multiply with is relatively prime to the number of characters we are mapping (e.g. gcd(26,7) = 1). 
 
 
 |  Caeser Shift 4       | Multiplication 7             |   Multiplication 6           |
