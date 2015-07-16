@@ -59,6 +59,20 @@ print(b) # Prints: ['2', '3', '4', '1']
 
 ```
 
+#### Inserting into a list
+
+- Not appending to the front or rear, but in the middle.
+- Well you could use .insert to put at front or rear (test question) but we won't
+
+```python
+import collections
+
+l = [2,4,6,8]
+l.insert(2,5)
+print(l)
+#Prints:  [2,4,5,6,8]
+```
+
 #### Euclid's Algorithm
 
 - Euclid’s Algorithm for Finding the GCD of Two Numbers
