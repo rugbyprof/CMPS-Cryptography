@@ -101,6 +101,33 @@ The caeser cipher uses addition as a function to map one letter to another.
 
  We can do the same with multiplication.
  
- 
+ |Plaintext Symbol|Number|Encryption with Key 7|Ciphertext|
+|:---:|:---:|:---:|:---:|
+|A|0|(0 * 7) % 26 = 0|A|
+|B|1|(1 * 7) % 26 = 7|H|
+|C|2|(2 * 7) % 26 = 14|O|
+|D|3|(3 * 7) % 26 = 21|V|
+|E|4|(4 * 7) % 26 = 2|C|
+|F|5|(5 * 7) % 26 = 9|J|
+|G|6|(6 * 7) % 26 = 16|Q|
+|H|7|(7 * 7) % 26 = 23|X|
+|I|8|(8 * 7) % 26 = 4|E|
+|J|9|(9 * 7) % 26 = 11|L|
+|K|10|(10 * 7) % 26 = 18|S|
+|L|11|(11 * 7) % 26 = 25|Z|
+|M|12|(12 * 7) % 26 = 6|G|
+|N|13|(13 * 7) % 26 = 13|N|
+|O|14|(14 * 7) % 26 = 20|U|
+|P|15|(15 * 7) % 26 = 1|B|
+|Q|16|(16 * 7) % 26 = 8|I|
+|R|17|(17 * 7) % 26 = 15|P|
+|S|18|(18 * 7) % 26 = 22|W|
+|T|19|(19 * 7) % 26 = 3|D|
+|U|20|(20 * 7) % 26 = 10|K|
+|V|21|(21 * 7) % 26 = 17|R|
+|W|22|(22 * 7) % 26 = 24|Y|
+|X|23|(23 * 7) % 26 = 5|F|
+|Y|24|(24 * 7) % 26 = 12|M|
+|Z|25|(25 * 7) % 26 = 19|T|
 
 Some of this material is based on: [Hacking Ciphers](https://inventwithpython.com/hackingciphers.pdf) Written by: [Al Sweigart](https://inventwithpython.com/about.html) 
