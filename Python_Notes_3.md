@@ -65,6 +65,9 @@ print(phi(30))
 
 #Output: 8
 ```
+|                       |                              |                              |
+|-----------------------|------------------------------|------------------------------|
+|![alt text][addition_4]|![alt text][multiplication_7] |![alt text][multiplication_7] |
 
 #### Multiplicative Cipher
 
@@ -163,3 +166,10 @@ BUT! _26_ and _7_ are relatively prime. Look what happens when they are not rela
 |Z|25|(25 * 6) % 26 = 20|U|
 
 Some of this material is based on: [Hacking Ciphers](https://inventwithpython.com/hackingciphers.pdf) Written by: [Al Sweigart](https://inventwithpython.com/about.html) 
+
+Reference-style: 
+
+
+[addition_4]: http://f.cl.ly/items/0F15332X3u3K3U2V2w0R/addition_shift4.png "Addition Shift 4"
+[multiplication_7]: http://f.cl.ly/items/3M1y0o1q3K3r1E1Z2l41/multiplication_key_7.png "Multiplication 7"
+[multiplication_6]: http://f.cl.ly/items/1x3N2s3l0l3K3X433Q3i/multiplication_key_6.png "Multiplication 6"
