@@ -38,46 +38,127 @@ def gcd(a, b):
 
 Relatively prime numbers are used for the multiplicative and affine ciphers. We say that two numbers are relatively prime if their greatest common divisor is 1. That is, the numbers a and b are relatively prime to each other if the gcd(a, b) == 1.
 
-The following snippet will print out `n` integers `1 <= n <= 99` along with how many other integers that are also `1 <= n <= 99` that it is coprime (relatively prime) with.
+The following snippet calculates phi(n), or the number of integers that are coprime (relatively prime) to n. This version will alternatively return the actual values that are coprime to n if wanted. Lets all agree that this would be insane for extremely large n :) 
 
 ```python
-import collections
-N = 100
+import fractions
 
-factors = [set() for n in range(N)]
-factored = collections.defaultdict(set)
+def phi(n,return_list=False):
+    amount = 0
+    coprimes = []
 
-for n in range(2, N):
-    if not factors[n]:           # no factors yet -> n is prime
-        for m in range(n, N, n): # all multiples of n up to N
-            factors[m].add(n)
-            factored[n].add(m)
+    for k in range(1, n + 1):
+        if fractions.gcd(n, k) == 1:
+            amount += 1
+            coprimes.append(k)
 
-for n in range(1, N):
-    coprimes = set(range(1, N))  # start with all the numbers in the range
-    for f in factors[n]:         # eliminate numbers that share a prime factor
-        coprimes -= factored[f]
-    print(n,' is coprime with ',len(coprimes),' others')
-```
-Source: [StackOverflow](http://stackoverflow.com/questions/23922371/optimizing-list-comprehension-to-find-pairs-of-co-prime-numbers)
+    if return_list:
+        return coprimes
+    else:
+        return amount
+        
+print(phi(30,True))
 
-Example:
+#Output: [1, 7, 11, 13, 17, 19, 23, 29]
 
-```
-1  is coprime with  99  others
-2  is coprime with  50  others
-3  is coprime with  66  others
-4  is coprime with  50  others
-5  is coprime with  80  others
-6  is coprime with  33  others
-7  is coprime with  85  others
-8  is coprime with  50  others
-9  is coprime with  66  others
-10  is coprime with  40  others
-11  is coprime with  90  others
-12  is coprime with  33  others
-13  is coprime with  92  others
-...
+print(phi(30))
+
+#Output: 8
 ```
 
-Source: [Hacking Ciphers](https://inventwithpython.com/hackingciphers.pdf) Written by: [Al Sweigart](https://inventwithpython.com/about.html)
+#### Multiplicative Cipher
+
+The caeser cipher uses addition as a function to map one letter to another. 
+
+|Plaintext Symbol|Number|Shift 4|Ciphertext|
+|:---:|:---:|:---:|:---:|
+|A|0|0 + 4 % 26 = 4|E|
+|B|1|1 + 4 % 26 = 5|F|
+|C|2|2 + 4 % 26 = 6|G|
+|D|3|3 + 4 % 26 = 7|H|
+|E|4|4 + 4 % 26 = 8|I|
+|F|5|5 + 4 % 26 = 9|J|
+|G|6|6 + 4 % 26 = 10|K|
+|H|7|7 + 4 % 26 = 11|L|
+|I|8|8 + 4 % 26 = 12|M|
+|J|9|9 + 4 % 26 = 13|N|
+|K|10|10 + 4 % 26 = 14|O|
+|L|11|11 + 4 % 26 = 15|P|
+|M|12|12 + 4 % 26 = 16|Q|
+|N|13|13 + 4 % 26 = 17|R|
+|O|14|14 + 4 % 26 = 18|S|
+|P|15|15 + 4 % 26 = 19|T|
+|Q|16|16 + 4 % 26 = 20|U|
+|R|17|17 + 4 % 26 = 21|V|
+|S|18|18 + 4 % 26 = 22|W|
+|T|19|19 + 4 % 26 = 23|X|
+|U|20|20 + 4 % 26 = 24|Y|
+|V|21|21 + 4 % 26 = 25|Z|
+|W|22|22 + 4 % 26 = 0|A|
+|X|23|23 + 4 % 26 = 1|B|
+|Y|24|24 + 4 % 26 = 2|C|
+|Z|25|25 + 4 % 26 = 3|D|
+
+ We can do the same with multiplication.
+ 
+|Plaintext Symbol|Number|Encryption with Key 7|Ciphertext|
+|:---:|:---:|:---:|:---:|
+|A|0|(0 * 7) % 26 = 0|A|
+|B|1|(1 * 7) % 26 = 7|H|
+|C|2|(2 * 7) % 26 = 14|O|
+|D|3|(3 * 7) % 26 = 21|V|
+|E|4|(4 * 7) % 26 = 2|C|
+|F|5|(5 * 7) % 26 = 9|J|
+|G|6|(6 * 7) % 26 = 16|Q|
+|H|7|(7 * 7) % 26 = 23|X|
+|I|8|(8 * 7) % 26 = 4|E|
+|J|9|(9 * 7) % 26 = 11|L|
+|K|10|(10 * 7) % 26 = 18|S|
+|L|11|(11 * 7) % 26 = 25|Z|
+|M|12|(12 * 7) % 26 = 6|G|
+|N|13|(13 * 7) % 26 = 13|N|
+|O|14|(14 * 7) % 26 = 20|U|
+|P|15|(15 * 7) % 26 = 1|B|
+|Q|16|(16 * 7) % 26 = 8|I|
+|R|17|(17 * 7) % 26 = 15|P|
+|S|18|(18 * 7) % 26 = 22|W|
+|T|19|(19 * 7) % 26 = 3|D|
+|U|20|(20 * 7) % 26 = 10|K|
+|V|21|(21 * 7) % 26 = 17|R|
+|W|22|(22 * 7) % 26 = 24|Y|
+|X|23|(23 * 7) % 26 = 5|F|
+|Y|24|(24 * 7) % 26 = 12|M|
+|Z|25|(25 * 7) % 26 = 19|T|
+
+BUT! _26_ and _7_ are relatively prime. Look what happens when they are not relatively prime:
+
+|Plaintext Symbol|Number|Encryption with Key 6|Ciphertext|
+|:---:|:---:|:---:|:---:|
+|A|0|(0 * 6) % 26 = 0|A|
+|B|1|(1 * 6) % 26 = 6|G|
+|C|2|(2 * 6) % 26 = 12|M|
+|D|3|(3 * 6) % 26 = 18|S|
+|E|4|(4 * 6) % 26 = 24|Y|
+|F|5|(5 * 6) % 26 = 4|E|
+|G|6|(6 * 6) % 26 = 10|K|
+|H|7|(7 * 6) % 26 = 16|Q|
+|I|8|(8 * 6) % 26 = 22|W|
+|J|9|(9 * 6) % 26 = 2|C|
+|K|10|(10 * 6) % 26 = 8|I|
+|L|11|(11 * 6) % 26 = 14|O|
+|M|12|(12 * 6) % 26 = 20|U|
+|N|13|(13 * 6) % 26 = 0|A|
+|O|14|(14 * 6) % 26 = 6|G|
+|P|15|(15 * 6) % 26 = 12|M|
+|Q|16|(16 * 6) % 26 = 18|S|
+|R|17|(17 * 6) % 26 = 24|Y|
+|S|18|(18 * 6) % 26 = 4|E|
+|T|19|(19 * 6) % 26 = 10|K|
+|U|20|(20 * 6) % 26 = 16|Q|
+|V|21|(21 * 6) % 26 = 22|W|
+|W|22|(22 * 6) % 26 = 2|C|
+|X|23|(23 * 6) % 26 = 8|I|
+|Y|24|(24 * 6) % 26 = 14|O|
+|Z|25|(25 * 6) % 26 = 20|U|
+
+Some of this material is based on: [Hacking Ciphers](https://inventwithpython.com/hackingciphers.pdf) Written by: [Al Sweigart](https://inventwithpython.com/about.html) 
