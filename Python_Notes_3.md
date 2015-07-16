@@ -24,6 +24,55 @@ print(i , j)
 #output: 11 13
 ```
 
+#### Extend vs Append
+
+- Append: adds item to end of list
+- Extend: adds entire list to end of list (kind of like concatenation)
+
+```python
+list1 = ['jupiter','mars','venus','earth']
+list2 = [1,2,3,4]
+list1.extend(list2)
+
+print(list1)
+# Outputs ['jupiter','mars','venus','earth',1,2,3,4] #length of list1 increased by 4
+
+list1.append(list2)
+# Outputs ['jupiter', 'mars', 'venus', 'earth', [1, 2, 3, 4]] #length of list1 increased by 1
+
+```
+#### Removing Duplicates with the set() Function
+
+Using a couple of different techniques to add duplicates to the string,
+we can then use `set` to get all unique values.
+```python
+import collections
+
+s = "1234" * 5
+print(s)
+#Prints: 12341234123412341234
+a = set(s)
+print(a) # Prints: {'2', '3', '4', '1'}
+
+b = list(set(s))
+print(b) # Prints: ['2', '3', '4', '1']
+
+```
+
+#### Inserting into a list
+
+- Not appending to the front or rear, but in the middle.
+- Well you could use .insert to put at front or rear (test question) but we won't
+
+```python
+import collections
+
+l = [2,4,6,8]
+l.insert(2,5)
+print(l)
+#Prints:  [2,4,5,6,8]
+```
+
 #### Euclid's Algorithm
 
 - Euclid’s Algorithm for Finding the GCD of Two Numbers
