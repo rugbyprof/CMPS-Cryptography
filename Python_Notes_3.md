@@ -75,7 +75,34 @@ The caeser cipher uses addition with modulus as a function to map one letter to 
 |-----------------------|------------------------------|------------------------------|
 |![alt text][addition_4]|![alt text][multiplication_7] |![alt text][multiplication_6] |
 
-
+|Plaintext Symbol|Number|Encryption with Key 15|Ciphertext|
+|:---:|:---:|:---:|:---:|
+|A|0|(0 * 15) % 26 = 0|A|
+|B|1|(1 * 15) % 26 = 15|P|
+|C|2|(2 * 15) % 26 = 4|E|
+|D|3|(3 * 15) % 26 = 19|T|
+|E|4|(4 * 15) % 26 = 8|I|
+|F|5|(5 * 15) % 26 = 23|X|
+|G|6|(6 * 15) % 26 = 12|M|
+|H|7|(7 * 15) % 26 = 1|B|
+|I|8|(8 * 15) % 26 = 16|Q|
+|J|9|(9 * 15) % 26 = 5|F|
+|K|10|(10 * 15) % 26 = 20|U|
+|L|11|(11 * 15) % 26 = 9|J|
+|M|12|(12 * 15) % 26 = 24|Y|
+|N|13|(13 * 15) % 26 = 13|N|
+|O|14|(14 * 15) % 26 = 2|C|
+|P|15|(15 * 15) % 26 = 17|R|
+|Q|16|(16 * 15) % 26 = 6|G|
+|R|17|(17 * 15) % 26 = 21|V|
+|S|18|(18 * 15) % 26 = 10|K|
+|T|19|(19 * 15) % 26 = 25|Z|
+|U|20|(20 * 15) % 26 = 14|O|
+|V|21|(21 * 15) % 26 = 3|D|
+|W|22|(22 * 15) % 26 = 18|S|
+|X|23|(23 * 15) % 26 = 7|H|
+|Y|24|(24 * 15) % 26 = 22|W|
+|Z|25|(25 * 15) % 26 = 11|L|
 
 
 Some of this material is based on: [Hacking Ciphers](https://inventwithpython.com/hackingciphers.pdf) Written by: [Al Sweigart](https://inventwithpython.com/about.html) 
