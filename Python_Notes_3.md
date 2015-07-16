@@ -84,4 +84,4 @@ Reference-style:
 [addition_4]: http://f.cl.ly/items/0F15332X3u3K3U2V2w0R/addition_shift4.png "Addition Shift 4"
 [multiplication_7]: http://f.cl.ly/items/3M1y0o1q3K3r1E1Z2l41/multiplication_key_7.png "Multiplication 7"
 [multiplication_6]: http://f.cl.ly/items/1x3N2s3l0l3K3X433Q3i/multiplication_key_6.png "Multiplication 6"
-[multiplication_15]: http://f.cl.ly/items/28202d412h1R3P2w0G2L/multiplication_key_15.png "Multiplication 15"
+[multiplication_15]: http://f.cl.ly/items/2x3W1x222C3w40070k3o/multiplication_key_15.png "Multiplication 15"
