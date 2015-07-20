@@ -124,7 +124,8 @@ if os.path.exists(outputFilename):
 response = input('> ')
 if not response.lower().startswith('c'):
 sys.exit()
-```￼￼￼￼￼￼￼￼￼￼￼
+```
+￼￼￼￼￼
 
 #### Multiplicative Cipher
 
