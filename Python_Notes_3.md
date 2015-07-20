@@ -115,6 +115,17 @@ print(phi(30))
 #Output: 8
 ```
 
+#### startswith() and endswith() String Methods
+
+```python
+# If the output file already exists, give the user a chance to quit.
+if os.path.exists(outputFilename):
+    print('This will overwrite the file %s. (C)ontinue or (Q)uit?' % (outputFilename))
+response = input('> ')
+if not response.lower().startswith('c'):
+sys.exit()
+```￼￼￼￼￼￼￼￼￼￼￼
+
 #### Multiplicative Cipher
 
 The caeser cipher uses addition with modulus as a function to map one letter to another. The same can be done using multiplication with modulus. However, a side effect of using multiplication is the possibility that we don't get a one-to-one function! To ensure we get a one-to-one function we must ensure that the number we multiply with is relatively prime to the number of characters we are mapping (e.g. gcd(26,15) = 1). 
