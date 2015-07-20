@@ -4,22 +4,20 @@ import random
 import os
 
 def main():
-    myRsa = Rsa()
+    myRsa = Rsa(1024)
     myRsa.makeKeyFiles()
 
 class Rsa:
-    def __init__(self):
+    def __init__(self,key_size=128):
         self.publicKey = ()
         self.privateKey = ()
         self.privateFileName = ""
         self.publicFileName = ""
-        self.keySize = 128
+        self.keySize = key_size
 
-    def generateKey(self,key_size=128):
+    def generateKey(self):
         # Creates a public/private key pair with keys that are keySize bits in
         # size. This function may take a while to run.
-
-        self.keySize = key_size
 
         # Step 1: Create two prime numbers, p and q. Calculate n = p * q.
         print('Generating p prime...')
@@ -48,7 +46,7 @@ class Rsa:
         print()
 
 
-    def makeKeyFiles(self,key_size=128):
+    def makeKeyFiles(self):
         # Creates two files 'x_pubkey.txt' and 'x_privkey.txt' (where x is the
         # value in name) with the the n,e and d,e integers written in them,
         # delimited by a comma.
@@ -64,7 +62,6 @@ class Rsa:
         self.privateFileName = '{}/{}.priv'.format(currentPath,fileName)
         self.publicFileName = '{}/{}.pub'.format(currentPath,fileName)
 
-        self.keySize = key_size
         # Our safety check will prevent us from overwriting our old key files:
         if os.path.exists(self.privateFileName) or os.path.exists(self.publicFileName):
             print('{}/{} already exists.'.format(currentPath,fileName))
