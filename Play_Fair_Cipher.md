@@ -50,13 +50,13 @@ Cipher text: HQ KL VW MS UO SD PT UT YN EM BF
 
 Set up a Playfair Square using the key phrase: "Love is a many splendored thing".
 
-|     |     |     |     |     |
-| --- | --- | --- | --- | --- |
-|     |     |     |     |     |
-|     |     |     |     |     |
-|     |     |     |     |     |
-|     |     |     |     |     |
-|     |     |     |     |     |
+|    |  0  |  1  |  2  |  3  |  3  |
+|:--:|:---:|:---:|:---:|:---:|:---:|
+| 0  |     |     |     |     |     |
+| 1  |     |     |     |     |     |
+| 2  |     |     |     |     |     |
+| 3  |     |     |     |     |     |
+| 4  |     |     |     |     |     |
 
 Use this to encode the message:
 
