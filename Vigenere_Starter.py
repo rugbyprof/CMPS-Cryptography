@@ -8,7 +8,7 @@ def printMatrix(v):
     j=0
     k=0
     line = ""
-    
+
     for i in range(26*26):
         line = line + v[j][k]
         j = j + 1
@@ -25,10 +25,10 @@ def printMatrix(v):
 # param ki: key index
 # param mi: message index
 def encrypt(v,k,m,ki,mi):
-    row = ord(m[mi]) - 65 
+    row = ord(m[mi]) - 65
     col = ord(k[ki]) - 65
     return v[row][col]
-    
+
 
 key = "I love crypto"
 key = key.upper()
@@ -36,7 +36,7 @@ key = key.upper()
 message = "We are going to invade europe tomorrow"
 message = message.upper()
 
-#Create empty 5x5 matrix 
+#Create empty 5x5 matrix
 vigenere = [[0 for i in range(26)] for i in range(26)]
 
 #Build the vigenere matrix
@@ -48,7 +48,7 @@ for i in range(26*26):
     if col >= 26:
         col = 0
         row = row + 1
-        
+
 
 encrypted = encrypt(vigenere,key,message,0,0)
 
@@ -56,4 +56,4 @@ print(encrypted)
 
 #pp = pprint.PrettyPrinter(indent=2)
 #pp.pprint(vigenere)
-printMatrix(vigenere) 
+printMatrix(vigenere)
