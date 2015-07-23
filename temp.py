@@ -159,19 +159,6 @@ def print_md_table(data):
 
 if __name__ == '__main__':
 
-    #print(relatively_prime_generator(1024))
-    #for n in relatively_prime_generator(1024,2,3):
-    #    print(n)
-    # start = time.time()
-    # phi(303137)
-    # end = time.time()
-    # print(end-start)
-    #
-    # start = time.time()
-    # phi(303137,True)
-    # end = time.time()
-    # print(end-start)
-
     data = []
     data.append(['Plaintext Symbol', 'Number', 'Shift of 4', 'Ciphertext'])
     for i in range(26):
