@@ -4,6 +4,7 @@ import sys
 import fractions
 import time
 import pprint
+from random import shuffle
 
 # Extended Euclidean algorithm
 #   returns a triple (g, x, y), such that ax + by = g = gcd(a, b)
@@ -159,6 +160,7 @@ def print_md_table(data):
 
 if __name__ == '__main__':
 
+<<<<<<< HEAD
     data = []
     data.append(['Plaintext Symbol', 'Number', 'Shift of 4', 'Ciphertext'])
     for i in range(26):
@@ -166,11 +168,49 @@ if __name__ == '__main__':
         symbol = '{}'.format(chr(((i+4)%26)+65))
         data.append([chr(i+65),i,encryption,symbol])
     print_md_table(data)
+=======
+    #print(relatively_prime_generator(1024))
+    #for n in relatively_prime_generator(1024,2,3):
+    #    print(n)
+    # start = time.time()
+    # phi(303137)
+    # end = time.time()
+    # print(end-start)
+    #
+    # start = time.time()
+    # phi(303137,True)
+    # end = time.time()
+    # print(end-start)
+
+    # data = []
+    # data.append(['Plaintext Symbol', 'Number', 'Shift of 4', 'Ciphertext'])
+    # for i in range(26):
+    #     encryption = '{} + 4 % 26 = {}'.format(i,(i+4)%26)
+    #     symbol = '{}'.format(chr(((i+4)%26)+65))
+    #     data.append([chr(i+65),i,encryption,symbol])
+    # print_md_table(data)
+    #
+    # data = []
+    # data.append(['Plaintext Symbol', 'Number', 'Encryption with Key 7', 'Ciphertext'])
+    # for i in range(26):
+    #     encryption = '({} * 6) % 26 = {}'.format(i,(i*6)%26)
+    #     symbol = '{}'.format(chr(((i*6)%26)+65))
+    #     data.append([chr(i+65),i,encryption,symbol])
+    # print_md_table(data)
+>>>>>>> eb72b8458d47db65f37bdf171b3a9374ca71adaf
 
     data = []
-    data.append(['Plaintext Symbol', 'Number', 'Encryption with Key 7', 'Ciphertext'])
+    temp = []
+    temp.append(' ')
+    for i in range (26):
+        temp.append(i)
+    data.append(temp)
     for i in range(26):
-        encryption = '({} * 6) % 26 = {}'.format(i,(i*6)%26)
-        symbol = '{}'.format(chr(((i*6)%26)+65))
-        data.append([chr(i+65),i,encryption,symbol])
+        temp = []
+        for j in range(26):
+            temp.append( chr(((j+i)%26)+65) )
+        shuffle(temp)
+        temp.insert(0,i)
+        data.append(temp)
+
     print_md_table(data)
