@@ -1,5 +1,3 @@
-## Not Done
-
 ## Randomized Vigenère
 
 #### Overview:
@@ -117,15 +115,25 @@ def main():
 if __name__ == '__main__':
     main()
 ```
-- Create another file called `randomized_vigenere.py` where you will place your implementation of the randomized vigenere.
+- In your `randomized_vigenere.py` you will place your implementation of the randomized vigenere.
 - Your implementation does not have to be organized in a class, but should (at a minimum) provided the following functions:
     - `def keywordFromSeed(seed)`
-    - `def encrypt(keyword)`
-    - `def decrypt(keyword)`
-
+        - Does what I showed above. 
+    - `def buildVigenere()`
+        - This will build and return the Vigenere matrix. 
+        - You don't need to pass the seed (or anything for that matter) to the function because once the random number generator has been seeded once (at the top of the program), you don't have to worry about seeding anymore.
+    - `def encrypt(plain_text_message,keyword)`
+        - Describes itself
+    - `def decrypt(cipher_text_message,keyword)`
+        - Describes itself
+        - 
 #### What to Turn In
+- All of your files need to be uploaded to github by Monday 11:59 p.m. (Yes, this gives us a chance to answer questions about the program, and you can try to finish by Midnight).
+- All work needs to done on an individual basis, and suspected cheating will result in appropriate action.
+- All code needs to commented at a level appropriate upper level and graduate work.
+- A name block will be at the top of all your programs just like the requirements in program 1. 
+- Late programs will be reduced by 15 / 100 points the first day, and 10 points for each subsequent day until a 50 / 100 is reached. This way late programs can still get half credit. 
+- No late programs will be accepted after a subsequent program is assigned.
 
-All your 
-
-
+#### Contact me with any issues or questions. I didn't really proof read, so your input is invited.
 
