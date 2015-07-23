@@ -124,14 +124,16 @@ if __name__ == '__main__':
         - You don't need to pass the seed (or anything for that matter) to the function because once the random number generator has been seeded once (at the top of the program), you don't have to worry about seeding anymore.
         - Twist! Your vigenere cipher tableau will be a 95 x 95 matrix using the following symbols:
 
-```
-SYMBOLS = """ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\] ^_`abcdefghijklmnopqrstuvwxyz{|}~""" 
+```python
+#add triple quotes around this string
+SYMBOLS = " !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\] ^_`abcdefghijklmnopqrstuvwxyz{|}~"
 ```
     - `def encrypt(plain_text_message,keyword)`
         - Describes itself
     - `def decrypt(cipher_text_message,keyword)`
         - Describes itself
-        - 
+        
+        
 #### What to Turn In
 - All of your files need to be uploaded to github by Monday 11:59 p.m. (Yes, this gives us a chance to answer questions about the program, and you can try to finish by Midnight).
 - All work needs to done on an individual basis, and suspected cheating will result in appropriate action.
