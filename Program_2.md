@@ -122,6 +122,11 @@ if __name__ == '__main__':
     - `def buildVigenere()`
         - This will build and return the Vigenere matrix. 
         - You don't need to pass the seed (or anything for that matter) to the function because once the random number generator has been seeded once (at the top of the program), you don't have to worry about seeding anymore.
+        - Twist! Your vigenere cipher tableau will be a 95 x 95 matrix using the following symbols:
+
+```
+SYMBOLS = """ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\] ^_`abcdefghijklmnopqrstuvwxyz{|}~""" 
+```
     - `def encrypt(plain_text_message,keyword)`
         - Describes itself
     - `def decrypt(cipher_text_message,keyword)`
@@ -134,6 +139,9 @@ if __name__ == '__main__':
 - A name block will be at the top of all your programs just like the requirements in program 1. 
 - Late programs will be reduced by 15 / 100 points the first day, and 10 points for each subsequent day until a 50 / 100 is reached. This way late programs can still get half credit. 
 - No late programs will be accepted after a subsequent program is assigned.
+
+
+
 
 #### Contact me with any issues or questions. I didn't really proof read, so your input is invited.
 
