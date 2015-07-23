@@ -79,13 +79,16 @@ print(keyWord)   # Prints "MATH"
 
 ### Requirements:
 
-- Create a folder called `Your-Name_Vigenere` where YourName is actually your name: (e.g. Reyansh-Jones_Vigenere). Notice the dash and underscore (letter grade off if not named correctly).
+- Create a folder called `First.Last.Vigenere` where YourName is actually your name: (e.g. Reyansh.Jones.Vigenere). Notice the dots, those are critical (letter grade off if not named correctly).
+- Remainder of files goes in your folder.
 - Create a file called `vig-main.py`.
-- `vig-main.py` will be similar to the snippet below except you will adjust the arguments accordingly.
+- `vig-main.py` will be similar to the driver snippet except you will adjust the arguments accordingly.
 - Here are some examples for you to base your code on: 
      - `python3 vig-main.py -m encrypt -seed 7487383487438734 -i plainText.txt -o encryptedText.txt`
      - `python3 vig-main.py -m decrypt -seed 7487383487438734 -i encryptedText.txt -o decryptedText.txt`
+- Create another file called `randomized_vigenere.py`. This is where your Vigenere implentation will go.
 
+##### Driver Snippet:
 ```python
 import argparse
 import sys
