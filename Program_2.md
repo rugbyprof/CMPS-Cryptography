@@ -158,7 +158,7 @@ print(vigenere)
         
         
 #### What to Turn In
-- All of your files need to be uploaded to github by Monday 11:59 p.m. (Yes, this gives us a chance to answer questions about the program, and you can try to finish by Midnight).
+- All of your files need to be uploaded to github by Monday 27 Jul 11:59 p.m. (Yes, this gives us a chance to answer questions about the program, and you can try to finish by Midnight).
 - All work needs to done on an individual basis, and suspected cheating will result in appropriate action.
 - All code needs to commented at a level appropriate upper level and graduate work.
 - A name block will be at the top of all your programs just like the requirements in program 1. 
