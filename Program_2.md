@@ -119,19 +119,42 @@ if __name__ == '__main__':
 - Your implementation does not have to be organized in a class, but should (at a minimum) provided the following functions:
     - `def keywordFromSeed(seed)`
         - Does what I showed above. 
-    - `def buildVigenere()`
-        - This will build and return the Vigenere matrix. 
-        - You don't need to pass the seed (or anything for that matter) to the function because once the random number generator has been seeded once (at the top of the program), you don't have to worry about seeding anymore.
-        - Twist! Your vigenere cipher tableau will be a 95 x 95 matrix using the following symbols:
-
-```python
-#add triple quotes around this string
-SYMBOLS = " !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\] ^_`abcdefghijklmnopqrstuvwxyz{|}~"
-```
     - `def encrypt(plain_text_message,keyword)`
         - Describes itself
     - `def decrypt(cipher_text_message,keyword)`
         - Describes itself
+    - `def buildVigenere()`
+        - This will build and return the Vigenere matrix. 
+        - You don't need to pass the seed (or anything for that matter) to the function because once the random number generator has been seeded once (at the top of the program), you don't have to worry about seeding anymore.
+    - Twist! Your vigenere cipher tableau will be a 95 x 95 matrix using the following symbols:
+```python
+#add triple quotes around this string
+SYMBOLS = " !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\] ^_`abcdefghijklmnopqrstuvwxyz{|}~"
+```
+#### Example Build Vigenere using just alphabet:
+```python
+def buildVigenere(symbols):
+
+    n = len(symbols)
+
+    vigenere = [[0 for i in range(n)] for i in range(n)]
+
+    #Build the vigenere matrix
+    for i in range(n):
+        temp = symbols
+        for j in range(n):
+            r = random.randrange(len(temp))
+            vigenere[i][j] = temp[r]
+            temp.replace(temp[r],'')
+    return vigenere
+    
+symbols = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+
+vigenere = buildVigenere(symbols)
+
+print(vigenere)
+```
+
         
         
 #### What to Turn In
