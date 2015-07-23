@@ -24,4 +24,7 @@ Speaking of keys, what do we use as a key for our randomized Vigenère? How do w
 2. We also need to send the `seed` used to prime the random number generator along with the keyword. 
 3. OR we can use the seed AS the keyword!
 
+#### Seed As Vigenère Key
+
+
 
