@@ -12,7 +12,7 @@ This slight alteration of the original Vigenère cipher that was originally desc
 
 The randomized version contains randomly generated alphabets for each of the 26 individual ciphers. Of course a weak random number generator would render the cipher susceptible to cracking, but otherwise it should be a pretty decent symmetric key cipher. For a computer to generate a unique / random tableau is trivial, and if we can reliably generate the same tableau for sender and receiver we can ensure the algorithm is deterministic. 
 
-> Note: Were using the stock random number generator provided by python. This is considered a pseudo-random number generator, so you wouldn't be using this in a production system. 
+> Note: Were using the stock random number generator provided by python. This is considered a pseudo-random number generator, so you wouldn't necessarily be using this in a production system. But, maybe our version of Vigenère will be viable. That's a discussion for later.
 
 #### Randomized
 
@@ -65,7 +65,64 @@ def keywordFromSeed(seed):
         seed = seed // 100
     return ''.join(Letters)
 
+#Usage:
+
+seed = 12001907
+
+random.seed(12001907)
+
+keyWord = keywordFromSeed(seed)
+
+print(keyWord)   # Prints "MATH"
 
 ```
+
+### Requirements:
+
+- Create a folder called `Your-Name_Vigenere` where YourName is actually your name: (e.g. Reyansh-Jones_Vigenere). Notice the dash and underscore (letter grade off if not named correctly).
+- Create a file called `vig-main.py`.
+- `vig-main.py` will be similar to the snippet below except you will adjust the arguments accordingly.
+- Here are some examples for you to base your code on: 
+     - `python3 vig-main.py -m encrypt -seed 7487383487438734 -i plainText.txt -o encryptedText.txt`
+     - `python3 vig-main.py -m decrypt -seed 7487383487438734 -i encryptedText.txt -o decryptedText.txt`
+
+```python
+import argparse
+import sys
+
+def main():
+    parser = argparse.ArgumentParser()
+
+    parser.add_argument("-m", "--mode", dest="mode", default = "encode", help="Encode or Decode")
+    parser.add_argument("-i", "--inputfile", dest="inputFile", help="Input Name")
+    parser.add_argument("-o", "--outputfile", dest="outputFile", help="Output Name")
+    parser.add_argument("-t", "--type", dest="type",help="Encoding / Decoding mode [add,concat]")
+    parser.add_argument("-b", "--blocksize", dest="blocksize",help="Blocksize for encoding / decoding")
+
+    args = parser.parse_args()
+
+    f = open(args.inputFile,'r')
+    message = f.read()
+    if(args.type == 'add'):
+        data = bt.blockByAdd(message,args.mode,args.blocksize)
+    else:
+        data = bt.blockByConcat(message,args.mode,args.blocksize)
+    o = open(args.outputFile,'w')
+    o.write(str(data))
+
+
+if __name__ == '__main__':
+    main()
+```
+- Create another file called `randomized_vigenere.py` where you will place your implementation of the randomized vigenere.
+- Your implementation does not have to be organized in a class, but should (at a minimum) provided the following functions:
+    - `def keywordFromSeed(seed)`
+    - `def encrypt(keyword)`
+    - `def decrypt(keyword)`
+
+#### What to Turn In
+
+All your 
+
 
 
