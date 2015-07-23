@@ -4,13 +4,15 @@
 
 #### Overview:
 
-This slight alteration of the original Vigenère cipher that was originally described by Giovan Battista Bellaso in 1553 will allow us to create a more secure version of the cipher, leveraging the power of computers and random number generation. The original version of the Vigenère cipher used a tableau that contained 26 alphabets, each differing by a shift of one.
+This slight alteration of the original Vigenère cipher that was originally described by Giovan Battista Bellaso in 1553 will allow us to create a more secure version of the cipher, leveraging the power of computers and random number generation. The original version of the Vigenère cipher used a tableau that contained 26 alphabets, each differing by a shift of one. In my opinion the tableau was generated in this fashion because it was easily duplicated, and sufficiently secure at the time. 
 
 #### Original
 
 ![](http://f.cl.ly/items/3K011s3A2y3d1R2z2t1m/Screen%20Shot%202015-07-22%20at%205.39.26%20PM.png)
 
-The randomized version contains randomly generated alphabets for each of the 26 individual ciphers. Of course a weak random number generator would render the cipher susceptible to cracking, but otherwise it should be a pretty decent symmetric key cipher. 
+The randomized version contains randomly generated alphabets for each of the 26 individual ciphers. Of course a weak random number generator would render the cipher susceptible to cracking, but otherwise it should be a pretty decent symmetric key cipher. For a computer to generate a unique / random tableau is trivial, and if we can reliably generate the same tableau for sender and receiver we can ensure the algorithm is deterministic. 
+
+> Note: Were using the stock random number generator provided by python. This is considered a pseudo-random number generator, so you wouldn't be using this in a production system. 
 
 #### Randomized
 
@@ -22,13 +24,16 @@ Speaking of keys, what do we use as a key for our randomized Vigenère? How do w
 
 1. We have to guarantee that the tableau generation is done using the same random number generator by both parties.
 2. We also need to send the `seed` used to prime the random number generator along with the keyword. 
-3. OR we can use the seed AS the keyword!
+3. Alternatively, we can actually use the seed as the actual Vigenère keyword.
 
-#### Seed As Vigenère Key
+#### Converting Integer Seed To Vigenère Key
 
-Here is a function that we can use to turn some integer value into a keyword for our Vigenère cipher:
+Here is a function that we can use to turn some integer value into a keyword for our Vigenère cipher. It uses the method to turn integers into letters via modulo arithmetic.
 
 ```python
+
+import random
+
 #############################################################################
 # keywordFromSeed -
 #    Works by peeling off two digits at a time, and using modulo to map it into
@@ -59,6 +64,8 @@ def keywordFromSeed(seed):
         Letters.insert(0,chr((seed % 100) % 26 + 65))
         seed = seed // 100
     return ''.join(Letters)
+
+
 ```
 
 
