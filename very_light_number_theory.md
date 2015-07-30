@@ -1,6 +1,19 @@
 ### A touch of Number Theory
 (not proof read)
 
+```
+ ________________________________________
+( When chuck Norris does division, there )
+( are no remainders.                     )
+ ----------------------------------------
+        o   ^__^
+         o  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+---------------------------------------------------------
+```
+
 ___Prop___
 
 >1. For every _a_ ![](https://raw.githubusercontent.com/rugbyprof/CMPS-Cryptography/master/symbols/neq.gif) _0_, 
