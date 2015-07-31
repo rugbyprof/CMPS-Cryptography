@@ -8,9 +8,11 @@ This slight alteration of the original Vigenère cipher that was originally desc
 
 ![](http://f.cl.ly/items/3K011s3A2y3d1R2z2t1m/Screen%20Shot%202015-07-22%20at%205.39.26%20PM.png)
 
-The randomized version contains randomly generated alphabets for each of the 26 individual ciphers. Of course a weak random number generator would render the cipher susceptible to cracking, but otherwise it should be a pretty decent symmetric key cipher. For a computer to generate a unique / random tableau is trivial, and if we can reliably generate the same tableau for sender and receiver we can ensure the algorithm is deterministic. 
+The randomized version contains randomly generated alphabets for each of the 26 individual ciphers. Of course a weak random number generator would render the cipher susceptible to cracking, but otherwise it should be a pretty decent symmetric key cipher. For a computer to generate a unique / random tableau is trivial, and if we can reliably generate the same tableau for sender and receiver we can ensure the algorithm is deterministic.  
 
 > Note: Were using the stock random number generator provided by python. This is considered a pseudo-random number generator, so you wouldn't necessarily be using this in a production system. But, maybe our version of Vigenère will be viable. That's a discussion for later.
+
+> Important Note: Depending on how you do your doing your lookups with the keyword (applying keyword to column vs a row) you need to ensure that the letters in each column (or row) are unique. I apply the keyword to the top of the tableau (aka columns) so I ensure that there are no duplicate letters in each column.
 
 #### Randomized
 
