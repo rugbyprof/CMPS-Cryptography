@@ -30,7 +30,7 @@ b = -1
 w = 10
 h = 12
 
-# This creates a mesh grid with values determined by w and h
+# This creates a mesh grid with values determined by width and height (w,h)
 # of the plot with increments of .0001 (1000j = .0001 or 5j = .05)
 y, x = np.ogrid[-h:h:1000j, -w:w:1000j]
 
