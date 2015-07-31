@@ -12,7 +12,7 @@ The randomized version contains randomly generated alphabets for each of the 26 
 
 > Note: Were using the stock random number generator provided by python. This is considered a pseudo-random number generator, so you wouldn't necessarily be using this in a production system. But, maybe our version of Vigenère will be viable. That's a discussion for later.
 
-
+<br>
 > Important Note: Depending on how you do your doing your lookups with the keyword (applying keyword to column vs a row) you need to ensure that the letters in each column (or row) are unique. I apply the keyword to the top of the tableau (aka columns) so I ensure that there are no duplicate letters in each column.
 
 #### Randomized
