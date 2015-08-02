@@ -30,6 +30,11 @@ b = -1
 w = 10
 h = 12
 
+# Annotate the plot with your name using width (w) and height (h) as your reference points.
+an1 = plt.annotate("Terry Griffin", xy=(-w+2 , h-2), xycoords="data",
+              va="center", ha="center",
+              bbox=dict(boxstyle="round", fc="w"))
+
 # This creates a mesh grid with values determined by width and height (w,h)
 # of the plot with increments of .0001 (1000j = .0001 or 5j = .05)
 y, x = np.ogrid[-h:h:1000j, -w:w:1000j]
@@ -52,14 +57,33 @@ m = (y1-y2)/(x1-x2)
 
 # Plot the points ('ro' = red, 'bo' = blue, 'yo'=yellow and so on)
 plt.plot(x1, y1,'ro')
+
+# Annotate point 1
+plt.annotate('x1,y1', xy=(x1, y1), xytext=(x1+1,y1+1),
+        arrowprops=dict(arrowstyle="->",
+        connectionstyle="arc3"),
+        )
+
 plt.plot(x2, y2,'ro')
 
+# Annotate point 2
+plt.annotate('x2,y2', xy=(x2, y2), xytext=(x2+1,y2+1),
+        arrowprops=dict(arrowstyle="->",
+        connectionstyle="arc3"),
+        )
+        
 # Use a contour plot to draw the line (in pink) connecting our point.
 plt.contour(x.ravel(), y.ravel(), (y-y1)-m*(x-x1), [0],colors=('pink'))
 
 # I hard coded the third point, YOU will use good ol mathematics to find
 # the third point
 plt.plot(-1, 1,'yo')
+
+# Annotate point 3
+plt.annotate('-1,1', xy=(-1, 1), xytext=(-1+1,1+1),
+        arrowprops=dict(arrowstyle="->",
+        connectionstyle="arc3"),
+        )
 
 # Show a grid background on our plot
 plt.grid()
@@ -70,7 +94,7 @@ plt.show()
 
 #### Passing in Parameters
 
-
+Each parameter must be passed in from the command line using something similar to the following. By similar, I mean the parameters must be named ***exactly*** as below.
 
 ##### Driver Snippet:
 ```python
@@ -98,3 +122,8 @@ def main():
 if __name__ == '__main__':
     main()
 ```
+### Output
+
+Your output should look like the image below:
+
+![](http://f.cl.ly/items/2J2u1q2F1c0A1p21220S/ecurve.png)
