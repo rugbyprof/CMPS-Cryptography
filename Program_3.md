@@ -130,6 +130,6 @@ Remember your plot size is determined by how many points you plot in the curve:
 y, x = np.ogrid[-h:h:1000j, -w:w:1000j]
 ```
 
-Therefore you need to determine the location of point 3 (x3) before you create and populate the plot.
+Therefore you need to determine the location of point 3 (x3,y3) before you create and populate the plot.
 
 ![](http://f.cl.ly/items/2J2u1q2F1c0A1p21220S/ecurve.png)
