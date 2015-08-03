@@ -12,6 +12,15 @@ So we may want to investigate some alternatives to our current public key crypto
 
 You saw the math in class. Given `y^2 = x^3 + ax + b`, we want to find two values `a` and `b` that generate a good elliptical curve. Then (for this program) given two points: `(x1,y1),(x2,y2)` find a third point: `(x3,y3)` that is (hopefully) on the curve as well. In class we stated that integer math was required (answers in the form of a nice fraction, no decimals), but we changed our mind. Decimal values are acceptible.
 
+### Requirements:
+
+- Create a folder called `First.Last.Elliptical` where YourName is actually your name: (e.g. Reyansh.Jones.Vigenere). Notice the dots, those are critical (letter grade off if not named correctly).
+- Remainder of files goes in your folder.
+- Create a file called `main.py`.
+- `main.py` will be similar to the driver snippet except you will adjust the arguments accordingly.
+- Here are some examples for you to base your code on: 
+     - `python3 main.py -x1 2 -y1 3 -x2 -1 -y2 -1 -a 2 -b 1`
+
 ### Visualization
 
 To add a little learning to the program, we also want to visualize our curves and points. Your math should work for any input, however for visualizing the data we will keep the values for all inputs reasonable. Below is some helper code to get your visualizations started. It's remarkably easy in python.
@@ -135,7 +144,6 @@ Therefore you need to determine the location of point 3 (x3,y3) before you creat
 ![](http://f.cl.ly/items/2J2u1q2F1c0A1p21220S/ecurve.png)
 
 #### What to Turn In
-- All files need to be in a folder
 - All of your files need to be uploaded to github by ***Tuesday 4 Aug 2:30 p.m.*** 
 - All work needs to done on an individual basis, and suspected cheating will result in appropriate action.
 - All code needs to commented at a level appropriate upper level and graduate work.
