@@ -133,3 +133,12 @@ y, x = np.ogrid[-h:h:1000j, -w:w:1000j]
 Therefore you need to determine the location of point 3 (x3,y3) before you create and populate the plot.
 
 ![](http://f.cl.ly/items/2J2u1q2F1c0A1p21220S/ecurve.png)
+
+#### What to Turn In
+- All files need to be in a folder
+- All of your files need to be uploaded to github by ***Tuesday 4 Aug 2:30 p.m.*** 
+- All work needs to done on an individual basis, and suspected cheating will result in appropriate action.
+- All code needs to commented at a level appropriate upper level and graduate work.
+- A name block will be at the top of all your programs just like the requirements in program 1. 
+- Late programs will be reduced by 15 / 100 points the first day, and 10 points for each subsequent day until a 50 / 100 is reached. This way late programs can still get half credit. 
+- No late programs will be accepted after a subsequent program is assigned.
