@@ -23,7 +23,7 @@ print('x: {}, y: {}, z: {}'.format(x, y, z))
 ```
 - What is printed by the Python code?
 ```python
- print(14//4, 14%4, 14.0/4)
+print(14//4, 14%4, 14.0/4)
 ```
 - What is printed by the Python code?
 ```python
@@ -38,7 +38,7 @@ print('how\nis it\nnow')
 - What is printed by the Python code?
 ```python
 for z in [2, 4, 7, 9]:
- print(z - 1)
+    print(z - 1)
 ```
 - What is printed by the Python code?
 ```python
@@ -47,9 +47,9 @@ print('2' + '3')
 - What is printed by the Python code?
 ```python
 def f1():
- print('Hi')
+   print('Hi')
 def f2():
- print('Lo')
+   print('Lo')
 f2()
 f1()
 f1()
@@ -57,28 +57,28 @@ f1()
 - What is printed by the Python code?
 ```python
 def func():
- print('Yes')
+   print('Yes')
 print('No')
 func()
 ```
 - What is printed by the Python code?
 ```python
 def func(x):
- print(2*x)
+   print(2*x)
 func(5)
 func(4)
 ```
 - What is printed by the Python code?
 ```python
 def func(x):
- return x - 1
+   return x - 1
 print(func(3) * func(5))
 ```
 - What is printed by the Python code?
 ```python
 n = 3 #1
 for x in [2, 5, 8]: #2
- n = n + x #3
+   n = n + x #3
 print(n) #4
 ```
 - What is printed by the Python code?
@@ -88,27 +88,27 @@ print(list(range(3)))
 - What is printed by the Python code?
 ```python
 for i in range(3):
- print('Hello again!')
+   print('Hello again!')
  ```
 - What is printed by the Python code?
 ```python
 for i in range(4):
- print(i)
+   print(i)
  ```
 - What is printed by the Python code?
 ```python
 def s(x): #1
- return x*x #2
+   return x*x #2
 for n in [1, 2, 10]: #3
- print(s(n)) #4
+   print(s(n)) #4
  ```
 - What is printed by the Python code?
 ```python
 def s(x): #1
- return x*x #2
+   return x*x #2
 tot = 0 #3
 for n in [1, 3, 5]: #4
- tot = tot + s(n) #5
+   tot = tot + s(n) #5
 print(tot) #6
 ```
 - What is printed by the Python code?
